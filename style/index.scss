@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --blueLight: #d1e3ff;
+  --blue: #0355cc;
+  --orange: #ff8a1d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: var(--blueLight);
+  .navbar-brand {
+    color: var(--blue);
+  }
+}
+
+.hero {
+  background-color: var(--blueLight);
+  .row {
+    h2 {
+      color: var(--blue);
+    }
+    button {
+      border: 1px solid var(--orange);
+      background-color: transparent;
+      color: var(--orange);
+      padding: 0.5rem 1.5rem;
+      text-transform: uppercase;
+      transition: 300ms;
+      &:hover {
+        background-color: var(--orange);
+        color: white;
+      }
+    }
+  }
+}
+
+.features .container .feats {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  .col {
+    transition: 300ms;
+    i {
+      color: var(--orange);
+    }
+    &:hover {
+      background-color: var(--orange);
+      i,
+      h3 {
+        color: white;
+      }
+    }
+  }
+}
+
+.about .container {
+  button {
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    padding: 0.5rem 1.5rem;
+    color: var(--blue);
+    transition: 300ms;
+    &:hover {
+      background-color: var(--blue);
+      color: #fff;
+    }
+  }
+}
+
+.provide {
+  background-color: var(--blueLight);
+  .container .row {
+    h3 {
+      color: var(--blue);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    button {
+      background-color: transparent;
+      border: 1px solid var(--orange);
+      color: var(--orange);
+      padding: 0.5rem 1.5rem;
+      transition: 300ms;
+      &:hover {
+        color: #fff;
+        background-color: var(--orange);
+      }
+    }
+  }
+}
+
+.services .container {
+  .d-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    .col {
+      transition: 300ms;
+      &:hover {
+        background-color: var(--orange);
+        color: #fff;
+      }
+    }
+  }
+  button {
+    margin: auto;
+    display: block;
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    padding: 0.5rem 1.5rem;
+    color: var(--blue);
+    transition: 300ms;
+    &:hover {
+      background-color: var(--blue);
+      color: #fff;
+    }
+  }
+}
+
+.testimonials {
+  .user {
+    flex-grow: 1;
+  }
+  .stars i {
+    color: var(--orange);
+  }
+  #content {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+  #quotes {
+    width: fit-content;
+    padding: 0;
+  }
+}

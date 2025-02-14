@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --blueLight: #d1e3ff;
+  --blue: #0355cc;
+  --orange: #ff8a1d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: var(--blueLight);
+}
+nav .navbar-brand {
+  color: var(--blue);
+}
+
+.hero {
+  background-color: var(--blueLight);
+}
+.hero .row h2 {
+  color: var(--blue);
+}
+.hero .row button {
+  border: 1px solid var(--orange);
+  background-color: transparent;
+  color: var(--orange);
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  transition: 300ms;
+}
+.hero .row button:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+.features .container .feats {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.features .container .feats .col {
+  transition: 300ms;
+}
+.features .container .feats .col i {
+  color: var(--orange);
+}
+.features .container .feats .col:hover {
+  background-color: var(--orange);
+}
+.features .container .feats .col:hover i,
+.features .container .feats .col:hover h3 {
+  color: white;
+}
+
+.about .container button {
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  padding: 0.5rem 1.5rem;
+  color: var(--blue);
+  transition: 300ms;
+}
+.about .container button:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.provide {
+  background-color: var(--blueLight);
+}
+.provide .container .row h3 {
+  color: var(--blue);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.provide .container .row button {
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  padding: 0.5rem 1.5rem;
+  transition: 300ms;
+}
+.provide .container .row button:hover {
+  color: #fff;
+  background-color: var(--orange);
+}
+
+.services .container .d-grid {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.services .container .d-grid .col {
+  transition: 300ms;
+}
+.services .container .d-grid .col:hover {
+  background-color: var(--orange);
+  color: #fff;
+}
+.services .container button {
+  margin: auto;
+  display: block;
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  padding: 0.5rem 1.5rem;
+  color: var(--blue);
+  transition: 300ms;
+}
+.services .container button:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.testimonials .user {
+  flex-grow: 1;
+}
+.testimonials .stars i {
+  color: var(--orange);
+}
+.testimonials #content {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.testimonials #quotes {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+}/*# sourceMappingURL=index.css.map */
